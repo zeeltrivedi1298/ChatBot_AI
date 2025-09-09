@@ -58,31 +58,35 @@ This setup allows organizations to deliver **context-rich, accurate, and real-ti
 
 ## 📜 Example Queries
 
-### When Data Exists
+
 ```text
+-> When Data Exists
 Q: What are the total votes in all states?
 A: Delaware: 504,010  
    Florida: 11,067,456  
    Georgia: 4,997,716  
    ...
 
+-> When Data Does Not Exists
+Q: What is the price of rice in India?
+A: The retrieved data does not contain information about 'price of rice in India'. Please try another query.
 
 
-- **Azure OpenAI Service** → embeddings (`text-embedding-3-large`) + chat model (`gpt-35-turbo`)  
-- **Azure Cognitive Search** → vector + semantic retrieval  
-- **Azure Blob Storage** → document storage  
+
+- Azure OpenAI Service → embeddings (`text-embedding-3-large`) + chat model (`gpt-35-turbo`)  
+- Azure Cognitive Search → vector + semantic retrieval  
+- Azure Blob Storage → document storage  
 
 The chatbot retrieves relevant documents from Azure Blob, indexes them in Cognitive Search, and uses Azure OpenAI to generate **context-aware responses**.  
 
 ---
+ ⚙️ Architecture  
 
-## ⚙️ Architecture  
-
-1. **Data Upload** → Store documents (PDF, TXT, CSV, JSON) in **Azure Blob Storage**.  
-2. **Indexing** → Azure Cognitive Search parses documents and builds a vector index.  
-3. **Embedding** → Text embeddings created using `text-embedding-3-large`.  
-4. **Retrieval** → Search API returns top-matching documents.  
-5. **Generation** → GPT model (`gpt-35-turbo`) produces final answers grounded in retrieved data.  
+1. Data Upload → Store documents (PDF, TXT, CSV, JSON) in **Azure Blob Storage**.  
+2. Indexing → Azure Cognitive Search parses documents and builds a vector index.  
+3. Embedding → Text embeddings created using `text-embedding-3-large`.  
+4. Retrieval → Search API returns top-matching documents.  
+5. Generation → GPT model (`gpt-35-turbo`) produces final answers grounded in retrieved data.  
 
 ---
 
