@@ -4,6 +4,9 @@
 ## 📌 Overview  
 This project demonstrates how to build a **Retrieval-Augmented Generation (RAG) chatbot** on **Azure Cloud** using:  
 
+This chatbot utilizes Azure OpenAI to understand complex queries and Azure Cognitive Search to retrieve data from internal knowledge bases. Such a setup ensures users receive accurate, context-rich answers in real-time, improving customer satisfaction and operational efficiency at an enterprise scale.
+
+
 - **Azure OpenAI Service** → embeddings (`text-embedding-3-large`) + chat model (`gpt-35-turbo`)  
 - **Azure Cognitive Search** → vector + semantic retrieval  
 - **Azure Blob Storage** → document storage  
