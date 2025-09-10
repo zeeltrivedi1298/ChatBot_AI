@@ -70,7 +70,8 @@ A: Delaware: 504,010
 
 -> When Data Does Not Exists
 Q: What is the price of rice in India?
-A: The retrieved data does not contain information about 'price of rice in India'. Please try another query.
+A: The retrieved data does not contain information about 'price of rice in India'.
+ Please try another query.
 
 
 
