@@ -53,7 +53,7 @@ This setup allows organizations to deliver **context-rich, accurate, and real-ti
 - Connect your AI Search index to the GPT model.
 - Query with natural language:
   - ✅ If data exists → returns contextual answer with references.
-  - ⚠️ If not → responds with fallback (e.g., *“Data does not exist in provided source”*):contentReference.
+  - ⚠️ If not → responds with fallback (e.g., *“Data does not exist in provided source”*)
 
 ---
 
