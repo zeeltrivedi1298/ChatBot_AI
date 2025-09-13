@@ -46,7 +46,7 @@ This setup allows organizations to deliver **context-rich, accurate, and real-ti
 ### 3. Configure Data Connection
 - Import Blob Storage data into **Azure Cognitive Search**.
 - Configure index fields (e.g., `content`, `title`, `fileName`, `url`).
-- Choose **Semantic Search** for contextual results:contentReference.
+- Choose **Semantic Search** for contextual results
 
 ### 4. Deploy & Test
 - Go to **Azure OpenAI Studio → Playground**.
