@@ -1,6 +1,6 @@
 
 
-# 🤖 Create Chatbot using Azure AI Search & Azure OpenAI with Own Data
+# 🤖 Create Chatbot using Azure AI Search & Azure OpenAI With Own Data
 
 This project demonstrates how to build a **Retrieval-Augmented Generation (RAG) chatbot** on **Azure Cloud** using:  
 
